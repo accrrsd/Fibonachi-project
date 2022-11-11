@@ -1,0 +1,41 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 144px; */
+  gap: 12px;
+}
+
+.wideButton {
+  width: 362px;
+}
+.shortButton {
+  width: 175px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.inputClass {
+  max-width: 200px;
+}
+
+.display {
+  display: flex;
+  gap: 16px;
+  row-gap: 50px;
+  margin-top: 120px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.circleGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}

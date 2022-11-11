@@ -1,0 +1,15 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin: 48px calc(359px - (36px * 2)) 0;
+}
+
+.display {
+  display: flex;
+  row-gap: 48px;
+  column-gap: 16px;
+  margin: 120px auto 0;
+  flex-wrap: wrap;
+  max-width: 950px;
+}
