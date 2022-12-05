@@ -7,6 +7,9 @@ import { Circle } from '../ui/circle/circle'
 import { ElementStates } from '../../types/element-states'
 import { v4 as uuid } from 'uuid'
 
+// Основная функция переворота строки
+import { swap } from '../../utils/functions'
+
 type TResultItem = {
   key: string
   state: ElementStates
@@ -30,6 +33,7 @@ export const StringComponent: React.FC = () => {
       return new Promise((resolve) => setTimeout(resolve, time))
     }
 
+    // Визуализация результата
     const drawResult = (str: TResultItem[], indexes: Array<number>, NeededState: ElementStates) => {
       if (indexes.length > 0) {
         // Количество индексов обычно не больше двух
@@ -39,12 +43,6 @@ export const StringComponent: React.FC = () => {
         setResult(str)
         update({})
       }
-    }
-
-    const swap = (arr: any[], index: number, index2: number) => {
-      const temp = arr[index]
-      arr[index] = arr[index2]
-      arr[index2] = temp
     }
 
     // Итераторы
@@ -78,11 +76,17 @@ export const StringComponent: React.FC = () => {
   return (
     <SolutionLayout title="Строка">
       <form className={style.form}>
-        <Input isLimitText={true} maxLength={11} value={value} onChange={(e: ChangeEvent<HTMLInputElement>) => setValue(e.target.value)}></Input>
-        <Button text="Развернуть" onClick={() => startFlipping()} isLoader={loaded} disabled={loaded}></Button>
+        <Input
+          isLimitText={true}
+          maxLength={11}
+          value={value}
+          onChange={(e: ChangeEvent<HTMLInputElement>) => setValue(e.target.value)}
+          data-testid="string_input"
+        ></Input>
+        <Button text="Развернуть" onClick={() => startFlipping()} isLoader={loaded} disabled={!value} data-testid="string_button"></Button>
       </form>
       {result && (
-        <div className={style.display}>
+        <div className={style.display} data-testid="circle_container">
           {result.map((item) => (
             <Circle letter={item.key} state={item.state} key={uuid()}></Circle>
           ))}

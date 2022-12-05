@@ -9,7 +9,7 @@ import { Column } from '../ui/column/column'
 import { ElementStates } from '../../types/element-states'
 
 import { v4 as uuid } from 'uuid'
-import { delay } from '../../utils/functions'
+import { delay, swap } from '../../utils/functions'
 
 type TLoaded = Direction.Ascending | Direction.Descending | false
 type TResultArr = {
@@ -34,12 +34,6 @@ export const SortingPage: React.FC = () => {
   }
 
   const [arr, setArr] = useState(() => generateNewArray())
-
-  const swap = (arr: any[], index: number, index2: number) => {
-    const temp = arr[index]
-    arr[index] = arr[index2]
-    arr[index2] = temp
-  }
 
   const drawResult = (arr: TResultArr[], index?: number, state?: ElementStates) => {
     if (state && index !== undefined) {
