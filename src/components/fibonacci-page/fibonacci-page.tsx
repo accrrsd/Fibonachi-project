@@ -59,7 +59,12 @@ export const FibonacciPage: React.FC = () => {
           onChange={(e: ChangeEvent<HTMLInputElement>) => setValue(e.target.value)}
           placeholder="Введите число"
         ></Input>
-        <Button text="Развернуть" isLoader={loaded} disabled={loaded || Number(value) > 19} onClick={() => startFibonacciCalculating()}></Button>
+        <Button
+          text="Развернуть"
+          isLoader={loaded}
+          disabled={loaded || Number(value) > 19 || !value}
+          onClick={() => startFibonacciCalculating()}
+        ></Button>
       </form>
       <div className={style.display}>
         {result.map((item, i) => (
