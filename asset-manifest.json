@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Fibonachi-project/static/css/main.33cd8547.css",
-    "main.js": "/Fibonachi-project/static/js/main.c61178a9.js",
+    "main.js": "/Fibonachi-project/static/js/main.77c954fe.js",
     "static/js/787.0d1937ff.chunk.js": "/Fibonachi-project/static/js/787.0d1937ff.chunk.js",
     "static/media/bg.jpg": "/Fibonachi-project/static/media/bg.971318c52485d1963a30.jpg",
     "static/media/arr-hover.svg": "/Fibonachi-project/static/media/arr-hover.a52854e0c00e33cd4d38.svg",
@@ -19,11 +19,11 @@
     "index.html": "/Fibonachi-project/index.html",
     "static/media/loader.svg": "/Fibonachi-project/static/media/loader.b935a8aeb021da7b2a90191a58ea95f4.svg",
     "main.33cd8547.css.map": "/Fibonachi-project/static/css/main.33cd8547.css.map",
-    "main.c61178a9.js.map": "/Fibonachi-project/static/js/main.c61178a9.js.map",
+    "main.77c954fe.js.map": "/Fibonachi-project/static/js/main.77c954fe.js.map",
     "787.0d1937ff.chunk.js.map": "/Fibonachi-project/static/js/787.0d1937ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33cd8547.css",
-    "static/js/main.c61178a9.js"
+    "static/js/main.77c954fe.js"
   ]
 }
