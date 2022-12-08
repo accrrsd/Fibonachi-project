@@ -13,6 +13,7 @@
 - TS (TSX)
 - CSS
 - Cypress
+- Jest
 - React-testing-library
 
 Реализованы асинхронные изменения стейта и отрисовка анимаций.
